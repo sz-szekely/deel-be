@@ -5,6 +5,7 @@ const {getProfile} = require('./middleware/getProfile')
 const {getContractById, getNonTerminatedContracts, getActiveContracts} = require('./crud/contractCrud');
 const {getUnpaidJobs, getUnpaidJobById, setJobToPaid, getSumOfUnpaidJobs} = require('./crud/jobCrud');
 const {incrementBalance, getProfessionRevenues, getBestPayingClients} = require('./crud/profileCrud');
+
 const app = express();
 app.use(bodyParser.json());
 app.set('sequelize', sequelize)
